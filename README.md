@@ -3,6 +3,7 @@
 ![Архитектура сервиса](https://github.com/createm404/eg-laravel-compose/assets/167144358/32cd2015-19a6-43e9-b4aa-46074d4c5a72)
 
 
+# Инструкция по запуску
 
 Склонируйте репозиторий из GitHub:
 ```bash
