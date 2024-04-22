@@ -1,3 +1,6 @@
+![alt text]([http://url/to/img.png](https://excalidraw.com/#json=uW2yJ4Yf6LS1I2hXHDo6E,jTnmVnKQv6b5G5SA6qd6aQ))
+
+
 
 
 Склонируйте репозиторий из GitHub:
@@ -19,3 +22,4 @@ docker compose up --build -d
 ```bash
 http://localhost:8080/
 ```
+
