@@ -1,5 +1,6 @@
-![alt text]([http://url/to/img.png](https://excalidraw.com/#json=uW2yJ4Yf6LS1I2hXHDo6E,jTnmVnKQv6b5G5SA6qd6aQ))
+# Архитектура сервиса
 
+![Архитектура сервиса](https://github.com/createm404/eg-laravel-compose/assets/167144358/32cd2015-19a6-43e9-b4aa-46074d4c5a72)
 
 
 
