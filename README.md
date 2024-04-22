@@ -5,12 +5,12 @@
 
 # Инструкция по запуску
 
-Склонируйте репозиторий из GitHub:
+Склонируйте репозиторий из GitHub
 ```bash
 git clone https://github.com/createm404/eg-laravel-compose.git
 ```
 
-Перейдите в директорию с загруженным репозиторием:
+Перейдите в директорию с загруженным репозиторием
 ```bash
 cd eg-laravel-compose
 ```
@@ -20,7 +20,7 @@ cd eg-laravel-compose
 docker compose up --build -d
 ```
 
-После успешного запуска приложение будет доступно по адресу:
+После успешного запуска приложение будет доступно по адресу hosta и localhost
 ```bash
 http://localhost:8080/
 ```
