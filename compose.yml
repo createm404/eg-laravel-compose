@@ -1,0 +1,46 @@
+services:
+
+  web:
+    build:
+      context: docker
+      dockerfile: nginx.dockerfile
+    volumes:
+      - ./config/conf.d:/etc/nginx/conf.d:ro
+      - ./src:/var/www/src
+      - ./site:/var/www/site
+    ports:
+      - 8080:80
+    depends_on:
+      - php
+      - mariadb
+
+  php:
+    build:
+      context: docker
+      dockerfile: php.dockerfile
+    volumes:
+      - ./src:/var/www/src
+      - ./site:/var/www/site
+    depends_on:
+      - mariadb
+  
+  mariadb:
+    build:
+      context: docker
+      dockerfile: mariadb.dockerfile
+    env_file:
+      - ./env/.maria.env
+    volumes:
+      - ./docker/primarycnf:/etc/mysql/conf.d:z
+      - ./docker/entrypoint/mariadb:/docker-entrypoint-initdb.d:z 
+      
+  
+  mariadb-repl:
+    build:
+      context: docker
+      dockerfile: mariadb.dockerfile
+    env_file:
+      - ./env/.maria.env
+    volumes:
+      - ./docker/secondarycnf:/etc/mysql/conf.d:z
+      - ./docker/entrypoint/mariadb-repl:/docker-entrypoint-initdb.d:z 
