@@ -1,4 +1,5 @@
 #!/bin/sh
+cp /var/www/src/.env.example /var/www/src/.env 
 
 composer update --working-dir=/var/www/src
 composer install --working-dir=/var/www/src

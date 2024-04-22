@@ -7,12 +7,18 @@ services:
     volumes:
       - ./config/conf.d:/etc/nginx/conf.d:ro
       - ./src:/var/www/src
-      - ./site:/var/www/site
     ports:
       - 8080:80
     depends_on:
       - php
       - mariadb
+
+  node:
+    build:
+      context: docker
+      dockerfile: node.dockerfile
+    volumes:
+      - ./src:/var/www/src
 
   php:
     build:
@@ -20,10 +26,12 @@ services:
       dockerfile: php.dockerfile
     volumes:
       - ./src:/var/www/src
-      - ./site:/var/www/site
+    env_file:
+      - ./env/.laravel.env
     depends_on:
       - mariadb
-  
+      - node
+    
   mariadb:
     build:
       context: docker
