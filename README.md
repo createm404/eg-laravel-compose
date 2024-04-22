@@ -1,15 +1,4 @@
 
-Убедитесь, что у вас установлен Docker на вашем компьютере.
-Если нет, то установите для Linux
-
-```bash
-curl -fsSL https://test.docker.com -o test-docker.sh
-sudo sh test-docker.sh
-
-sudo usermod -aG docker $USER
-newgrp docker
-```
-
 
 Склонируйте репозиторий из GitHub:
 ```bash
