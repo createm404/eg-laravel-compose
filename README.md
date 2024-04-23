@@ -1,6 +1,6 @@
 # Архитектура сервиса
 
-![Архитектура сервиса](https://github.com/createm404/eg-laravel-compose/assets/167144358/32cd2015-19a6-43e9-b4aa-46074d4c5a72)
+![Архитектура сервиса]((https://github.com/createm404/eg-laravel-compose/assets/167144358/5fe95d69-31ed-4a7b-9fcb-7e4508e9185d))
 
 
 # Инструкция по запуску
